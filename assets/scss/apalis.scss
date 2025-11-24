@@ -25,18 +25,27 @@
     width: 100%;
     z-index: 500;
     padding-top: 5rem;
+    @include flexBet;
+    align-items: center;
     .slogan {
       width: 750px;
+      color: var(--white_base);
       h1 {
         font-family: "Raleway-Black";
-        color: var(--white_base);
         font-size: 5rem;
         line-height: 1.1;
         span {
           color: var(--orange_primary);
         }
       }
+      p {
+        margin-top: 2rem;
+        font-size: 2rem;
+      }
     }
+
+    // .banner_form_content {
+    // }
 
     .banner_form {
       width: 400px;
@@ -46,6 +55,9 @@
       margin-top: 2rem;
       color: var(--white_base);
       padding: 2rem;
+      position: absolute;
+      right: 0;
+      bottom: -120px;
     }
 
     .banner_form_title {
