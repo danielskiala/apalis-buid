@@ -170,8 +170,9 @@
 /***************************************************/
 .service {
   width: 100%;
-  background: url("../images/Illustration.png");
+  background: url("../images/illus-orange.png");
   background-size: cover;
+  transition: all 0.4s;
   .service_head {
     @include flexMid;
     @include flexCol;
@@ -209,6 +210,27 @@
         }
       }
     }
+  }
+}
+
+html.green {
+  .service {
+    background: url("../images/illus-green.png");
+    background-size: cover;
+  }
+}
+
+html.orange {
+  .service {
+    background: url("../images/illus-orange.png");
+    background-size: cover;
+  }
+}
+
+html.blue {
+  .service {
+    background: url("../images/illus-blue.png");
+    background-size: cover;
   }
 }
 
@@ -436,9 +458,38 @@
   .footer_card_copy {
     border-top: 1px solid rgba(255, 255, 255, 0.119);
     width: 100%;
-    @include flexMid;
+    @include flexBet;
     margin-top: 2rem;
     padding: 2rem 0 0;
+    .themes {
+      @include flex;
+      align-items: center;
+      gap: 1rem;
+      .label {
+        font-family: "Raleway-SemiBold";
+      }
+
+      .theme_items {
+        @include flex;
+        gap: 1rem;
+        .theme {
+          width: 16px;
+          height: 16px;
+          background-color: #f55c09;
+          border-radius: 100%;
+          box-shadow: 0px 0px 0px 1.4px rgba(255, 255, 255, 0.934);
+          cursor: pointer;
+
+          &.blue {
+            background: var(--blue_base);
+          }
+
+          &.green {
+            background-color: var(--green_second);
+          }
+        }
+      }
+    }
     a {
       color: var(--orange_primary);
       &:hover {

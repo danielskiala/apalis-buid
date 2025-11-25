@@ -23,4 +23,14 @@
     0px 39.0082px 46.3731px rgba(47, 50, 69, 0.12),
     0px 23.3274px 24.7933px rgba(47, 50, 69, 0.103),
     0px 12.9302px 13.8989px rgba(47, 50, 69, 0.088);
+
+  &.blue {
+    --orange_primary: var(--blue_base);
+    --orange_second: var(--blue_primary);
+  }
+
+  &.green {
+    --orange_primary: var(--green_second);
+    --orange_second: var(--green_primary);
+  }
 }
