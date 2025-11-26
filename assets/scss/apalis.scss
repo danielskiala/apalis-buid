@@ -17,7 +17,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center;
+    object-position: bottom top;
   }
 
   .banner_content {
@@ -119,7 +119,8 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.683));
+    // background: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.717));
+    background-color: rgba(0, 0, 0, 0.575);
   }
 
   .btn_play {
