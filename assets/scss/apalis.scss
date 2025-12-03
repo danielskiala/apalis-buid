@@ -119,8 +119,8 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: var(--banner_linear);
-    // background-color: rgba(0, 0, 0, 0.575);
+    // background: var(--banner_linear);
+    background-color: rgba(0, 0, 0, 0.575);
   }
 
   .btn_play {
@@ -214,26 +214,26 @@
   }
 }
 
-html.green {
-  .service {
-    background: url("../images/illus-green.png");
-    background-size: cover;
-  }
-}
+// html.green {
+//   .service {
+//     background: url("../images/illus-green.png");
+//     background-size: cover;
+//   }
+// }
 
-html.orange {
-  .service {
-    background: url("../images/illus-orange.png");
-    background-size: cover;
-  }
-}
+// html.orange {
+//   .service {
+//     background: url("../images/illus-orange.png");
+//     background-size: cover;
+//   }
+// }
 
-html.blue {
-  .service {
-    background: url("../images/illus-blue.png");
-    background-size: cover;
-  }
-}
+// html.blue {
+//   .service {
+//     background: url("../images/illus-blue.png");
+//     background-size: cover;
+//   }
+// }
 
 /***************************************************/
 /***** BENEFIT
@@ -437,6 +437,7 @@ html.blue {
       @include flexCol;
       gap: 1rem;
       a {
+        color: var(--white_base) !important;
         &:hover {
           text-decoration: underline;
         }
@@ -459,7 +460,8 @@ html.blue {
   .footer_card_copy {
     border-top: 1px solid rgba(255, 255, 255, 0.119);
     width: 100%;
-    @include flexBet;
+    // @include flexBet;
+    @include flexMid;
     margin-top: 2rem;
     padding: 2rem 0 0;
     .themes {
